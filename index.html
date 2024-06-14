@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta here -->
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta title="LatestNews for our Society for Sports, Music, Media" property="og:title">
+    <meta name="author" content="John Philip">
+
+    <!-- Upload to your github to put your link in content -->
+    <meta property="og:url" content="https://jphilip026.github.io">
+
+    <!-- Meta Description -->
+    <meta name="description" content="LatestNews for Sports, Music, Media. Who's the greatest athlete of all time and Who's your favorite musician like band and What's the most iconic sports documentary or News of all time.">
+    <meta property="og:title" content="Entertainment for Community">
+
+    <!-- Link for TailwindCss -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link for animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Final App Development</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="home1" class="flex justify-between px-24 h-16 items-center bg-cyan-950">
+      <div class="text-3xl py-2 text-white">Entertainment</div>
+      <div>
+        <a class="text-xl px-4 bg-green-600 py-2 text-white hover:bg-green-800">Home</a>
+        <a href="services.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">Explore</a>
+        <a href="about.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">About</a>
+        <a href="contact.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">Contact</a>
+      </div>
+    </nav>
+     <!-- //Navbar -->
+
+     <!-- Slide -->
+     <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden md:h-96">
+           <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="nba.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="media-trends.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="music_industry.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="music_festival.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </button>
+    </div>
+     <!-- //Slide -->
+
+     <!-- Pages -->
+    <section id="hero" class="bg-gray-100">
+      <div class="pt-1 mb-10 section-container">
+        <img src="entertainmentLogo.jpeg" alt="" class="mx-auto my-5 w-1/3 h-42 animate__animated animate__fadeIn  animate__delay-1s" />
+        <div class="text-center">
+          <h1 class="mx-10 my-5 text-3xl text-green-600 font-semibold">Welcome To LatestNews</h1>
+          <p class="mx-5 my-2 text-lg text-gray-600 leading-relaxed font-bold">LatestNews for Sports, Music, Media. Who's the greatest athlete of all time and Who's your favorite musician like band and What's the most iconic sports documentary or News of all time.</p>
+        </div>
+      </div>
+    </section>
+    <!-- //Pages -->
+
+    <!-- homepage -->
+    <section class="mt-16 sm:flex sm:flex-row-reverse sm:items-center max-w-7xl gap-5 sm:ml-28 sm:justify-center p-1">
+      <div class="sm:mr-10 sm:w-3/4 animate__animated animate__jackInTheBox">
+          <h2 class="text-xl text-left text-green-600 font-semibold">SPORTS</h2>
+          <p class="pt-1 text-gray-600 leading-relaxed">The Boston Celtics demonstrated their defensive prowess and shooting precision in Game 1 of the NBA Finals against the Dallas Mavericks. Jayson Tatum, Jaylen Brown, and their teammates showcased the strategy that could lead them to their 18th championship banner.</p>
+          <button class="py-2 px-5 bg-green-600 text-white font-medium hover:bg-green-800 mb-5 mt-5">
+              <a href="https://www.hiptoro.com/p/boston-celtics-dominant-defense-shuts-down-dallas-mavericks-in-nba-finals-game-1/" target="_blank">Learn More</a>
+          </button>
+      </div>
+      <div class="sm:pr-10 sm:w-2/4 px-20">
+          <img class="pt-5 sm:text-center animate__animated animate__fadeIn  animate__delay-1s" src="Boston-Celtics.jpg" alt="">
+      </div>
+    </section>
+  <!-- second homepage -->
+  <section class="mt-16 sm:flex sm:items-center max-w-7xl gap-5 sm:ml-28 sm:justify-center p-1">
+      <div class="sm:mr-10 sm:w-3/4 animate__animated animate__jackInTheBox">
+          <h2 class="text-xl text-left text-green-600 font-semibold">MUSIC</h2>
+          <p class="pt-1 text-gray-600 leading-relaxed">On Spotify, every day brings the chance to discover something new whether that’s an up and coming artist in your Discover Weekly or a podcast that’s piqued your interest or tune into your tried and true favorites. As shared at Stream On in February, there are 50,000+ hours of content uploaded to Spotify every day.</p>
+          <button class="py-2 px-5 bg-green-600 text-white font-medium hover:bg-green-800 mb-5 mt-5">
+              <a href="https://open.spotify.com/genre/0JQ5DAqbMKFz6FAsUtgAab" target="_blank">Learn More</a>
+          </button>
+      </div>
+      <div class="sm:pl-10 sm:w-2/4 px-20">
+          <img class="pt-5 sm:text-center animate__animated animate__fadeIn  animate__delay-1s" src="spotify1.png" alt="">
+      </div>
+  </section>
+  <!-- third homepage -->
+  <section class="mt-16 sm:flex sm:flex-row-reverse sm:items-center max-w-7xl gap-5 sm:ml-28 sm:justify-center p-1">
+    <div class="sm:mr-10 sm:w-3/4 animate__animated animate__jackInTheBox">
+        <h2 class="text-xl text-left text-green-600 font-semibold">MEDIA</h2>
+        <p class="pt-1 text-gray-600 leading-relaxed">President Marcos will skip the global peace summit in Switzerland this weekend and send presidential peace adviser Carlito Galvez Jr. as the country’s representative, Malacañang announced yesterday.Ukrainian President Volodymyr Zelensky made an unexpected visit last week to the Philippines to personally invite Marcos to attend the summit.</p>
+        <button class="py-2 px-5 bg-green-600 text-white font-medium hover:bg-green-800 mb-5 mt-5">
+            <a href="https://www.philstar.com/headlines/2024/06/12/2362207/marcos-skip-peace-summit-switzerland" target="_blank">Learn More</a>
+        </button>
+    </div>
+    <div class="sm:pr-10 sm:w-2/4 px-20">
+        <img class="pt-5 sm:text-center animate__animated animate__fadeIn  animate__delay-1s" src="news-1.jpg" alt="">
+    </div>
+  </section>
+  <!-- //homepage -->
+
+  <!-- button -->
+   <div class="flex justify-center mt-10">
+    <button class="py-2 px-5 text-gray-600 font-bold hover:bg-green-500 mb-5 mt-5 rounded-full underline">
+      <a href="services.html" target="_blank">Explore More</a>
+    </button>
+   </div>
+    <!-- maps -->
+    <div class="h-screen w-screen text-center mt-16">
+      <iframe class="inline-block vertical-align mx-auto w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.2375144014904!2d120.51525787527018!3d14.979514885552963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33966141ce787085%3A0x195cefbf0e0b66dd!2sFortuna%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1718083924800!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- //maps -->
+
+    <!-- footer -->
+    <footer class="text-gray-100 bg-gray-800">
+      <div class="max-w-3xl mx-auto py-6">
+          <h1 class="text-center text-lg lg:text-2xl">
+              John Philip
+          </h1>
+          <hr class="h-px mt-6 bg-gray-700 border-none">
+  
+          <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+              <div>
+                  <a class="text-xl font-bold text-gray-100 hover:text-gray-400">Follow Us</a>
+                  <div class="flex justify-between w-32 py-1 mt-5">
+                    <a href="https://www.facebook.com/johnphilippingul330?mibextid=ZbWKwL"
+                      ><img
+                        src="icon-facebook.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                    <a href="https://www.instagram.com/johnphilippngl?igsh=ZHlrcWFkZTRpNHhh"
+                      ><img
+                        src="icon-instagram.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                    <a href="https://www.instagram.com/johnphilippngl?igsh=ZHlrcWFkZTRpNHhh"
+                      ><img
+                        src="icon-twitter.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                  </div>
+              </div>
+  
+              <div class="flex mt-4 md:m-0">
+                  <div class="-mx-4">
+                      <a href="#home1" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400 bg-green-600">Home</a>
+                      <a href="services.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Explore</a>
+                      <a href="about.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">About</a>
+                      <a href="contact.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Contact</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>
