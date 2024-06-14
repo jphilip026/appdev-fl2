@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta here -->
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Contact</title>
+    <!-- link for tailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="home3" class=" flex justify-between px-24 h-16 items-center bg-cyan-950	">
+        <div class="text-3xl py-2 text-white">Entertainment</div>
+        <div>
+          <a href="/index.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">Home</a>
+          <a href="/pages/services.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">Explore</a>
+          <a href="/pages/about.html" class="text-xl px-4 py-2 text-white hover:bg-green-800">About</a>
+          <a class="text-xl px-4 bg-green-600 py-2 text-white hover:bg-green-800">Contact</a>
+        </div>
+      </nav>
+    <!-- //Navbar -->  
+    <!-- contact -->
+    <div class="container mx-auto p-4 mt-16 ">
+      <h1 class="text-3xl font-bold text-green-600 animate__animated animate__jackInTheBox">Contact Us</h1>
+      <form class="max-w-md mx-auto p-4 mb-4 bg-white shadow-md rounded mt-10 animate__animated animate__fadeIn  animate__delay-1s">
+          <div class="mb-4">
+              <label class="block text-green-600 text-lg mb-2" for="name">Name:</label>
+              <input type="text" id="name" name="name" class="bg-gray-200 border border-green-400 rounded p-2 w-full focus:bg-white focus:border-green-600 focus:outline-none" placeholder="John Doe">
+          </div>
+          <div class="mb-4">
+              <label class="block text-green-600 text-lg mb-2" for="email">Email:</label>
+              <input type="email" id="email" name="email" class="bg-gray-200 border border-green-400 rounded p-2 w-full focus:bg-white focus:border-green-600 focus:outline-none" placeholder="johndoe@example.com">
+          </div>
+          <div class="mb-4">
+              <label class="block text-green-600 text-lg mb-2" for="message">Message:</label>
+              <textarea id="message" name="message" class="bg-gray-200 border border-green-400 rounded p-2 w-full h-40 focus:bg-white focus:border-green-600 focus:outline-none" placeholder="Your message here..."></textarea>
+          </div>
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full">Send Message</button>
+      </form>
+  </div>
+    <!-- //contact -->
+     <!-- maps -->
+     <div class="h-screen w-screen text-center mt-16">
+      <iframe class="inline-block vertical-align mx-auto w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.2375144014904!2d120.51525787527018!3d14.979514885552963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33966141ce787085%3A0x195cefbf0e0b66dd!2sFortuna%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1718083924800!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+    </div>
+      <!-- //maps -->
+     <!-- footer -->
+     <footer class="text-gray-100 bg-gray-800">
+      <div class="max-w-3xl mx-auto py-6">
+          <h1 class="text-center text-lg lg:text-2xl">
+              John Philip
+          </h1>
+          <hr class="h-px mt-6 bg-gray-700 border-none">
+  
+          <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+              <div>
+                  <a class="text-xl font-bold text-gray-100 hover:text-gray-400">Follow Us</a>
+                  <div class="flex justify-between w-32 py-1 mt-5">
+                    <a href="https://www.facebook.com/johnphilippingul330?mibextid=ZbWKwL"
+                      ><img
+                        src="/images/icon-facebook.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                    <a href="https://www.instagram.com/johnphilippngl?igsh=ZHlrcWFkZTRpNHhh"
+                      ><img
+                        src="/images/icon-instagram.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                    <a href="https://www.instagram.com/johnphilippngl?igsh=ZHlrcWFkZTRpNHhh"
+                      ><img
+                        src="/images/icon-twitter.svg"
+                        alt=""
+                        class="duration-200 ficon"
+                    /></a>
+                  </div>
+              </div>
+  
+              <div class="flex mt-4 md:m-0">
+                  <div class="-mx-4">
+                      <a href="/index.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Home</a>
+                      <a href="/pages/services.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">Explore</a>
+                      <a href="/pages/about.html" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400">About</a>
+                      <a href="#home3" class="px-4 text-sm text-gray-100 font-medium hover:text-gray-400 bg-green-600">Contact</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
